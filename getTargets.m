@@ -14,7 +14,7 @@ for k = 1: numfiles
       display(strcat(num2str(k/numfiles*100), '%'))
   end
   try
-    fName = strcat(files(k).folder, '\', files(k).name);
+    fName = strcat(files(k).folder, '/', files(k).name);
     f = fits.openFile(fName);
     julian(k) = fits.readKeyDbl(f, 'MJD-OBS');
     val = fits.readKey(f, 'OBS-TYPE');

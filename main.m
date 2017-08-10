@@ -1,5 +1,5 @@
-findLineCoords
-getTargets
+% findLineCoords
+% getTargets
 starRoutine
 %Use visualExam to generate plots to pick out bad lines by eye. 
 %Use second column as 1/0 filter for good/bad lines
