@@ -3,7 +3,7 @@ rvShift = [0, -0.354, -59.381, -7.752, -18.83, 26.78, -98.35];
 stars = {'Sun', 'HD127334', 'HD144579', 'HD62613', 'HD219134', 'HD185144', 'HD103095'};
 save starInfo.mat rvShift stars
 load targets
-for starCounter = 2:length(stars)
+for starCounter = 1:length(stars)
     starName = stars{starCounter};
     directory = find(strcmp(target, starName));
     starOffset = rvShift(starCounter);
